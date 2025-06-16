@@ -1,15 +1,15 @@
-name:"first action"
+name: "first action"
 
 on:
   push:
-    branches:["master"]
+    branches: ["master"]
 
 jobs:
   deploy-actionstest:
-    runs-on:ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run:echo "Descargamos un pull del codigo"
-      - run:echo "Correr migraciones"
-      - run:echo "Generar binario"
-      - run:echo "Publicar version"
+      - run: echo "Descargamos un pull del codigo"
+      - run: echo "Correr migraciones"
+      - run: echo "Generar binario"
+      - run: echo "Publicar version"
