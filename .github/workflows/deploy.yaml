@@ -9,8 +9,8 @@ jobs:
   deploy-actions:
     runs-on:ubuntu-latest
     steps:
-      run:echo "Descargamos un pull del codigo"
-      run:echo "Correr migraciones"
-      run:echo "Generar binario"
-      run:echo "Publicar version"
-      
+      uses:
+        run:echo "Descargamos un pull del codigo"
+        run:echo "Correr migraciones"
+        run:echo "Generar binario"
+        run:echo "Publicar version"
